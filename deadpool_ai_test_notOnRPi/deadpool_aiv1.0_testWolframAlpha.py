@@ -6,8 +6,10 @@ import wolframalpha
 import requests
 
 app_id = "Enter wolfRam ID" # Directly set the app_id with your API key
+# OpenAI API key
+openai.api_key = "Enter Open Api key"        #####################enter api key
 client = wolframalpha.Client(app_id)
-    
+
 
 
 def get_ip():
@@ -18,8 +20,7 @@ def get_ip():
     except requests.RequestException as e:
         print(f"Error fetching IP: {e}")
         return None
-# OpenAI API key
-openai.api_key = "Enter Open Api key"        #####################enter api key
+
 
 # Specify the path to your text file using single-quotes
 file_path = r'C:\Users\robot\AppData\Local\Programs\Python\Python311\deadpool_ai\deadpool_prompt.txt'
