@@ -5,7 +5,7 @@ import difflib
 import wolframalpha
 import requests
 
-app_id = "7PTKWL-RQ6U3QAJX3" # Directly set the app_id with your API key
+app_id = "Enter wolfRam ID" # Directly set the app_id with your API key
 client = wolframalpha.Client(app_id)
     
 
@@ -19,7 +19,7 @@ def get_ip():
         print(f"Error fetching IP: {e}")
         return None
 # OpenAI API key
-openai.api_key = "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"
+openai.api_key = "Enter Open Api key"        #####################enter api key
 
 # Specify the path to your text file using single-quotes
 file_path = r'C:\Users\robot\AppData\Local\Programs\Python\Python311\deadpool_ai\deadpool_prompt.txt'
@@ -93,32 +93,7 @@ while True:
         )
 
         # Get and print assistant's response
-        #curse censor replacement
-        deadpool_response = response['choices'][0]['message']['content'].strip()
-        deadpool_response=deadpool_response.replace("F*ck","Fuck")
-        deadpool_response=deadpool_response.replace("f*ck","fuck")
-        deadpool_response=deadpool_response.replace("Sh*t","Shit")
-        deadpool_response=deadpool_response.replace("sh*t","shit")
-        deadpool_response=deadpool_response.replace("D*ck","Dick")
-        deadpool_response=deadpool_response.replace("d*ck","dick")
-        deadpool_response=deadpool_response.replace("*nt","unt")
-        deadpool_response=deadpool_response.replace("*tch","itch")
-        deadpool_response=deadpool_response.replace("*ck","ock")
-        deadpool_response=deadpool_response.replace("a**","ass")
-        deadpool_response=deadpool_response.replace("b*lls","balls")
-        deadpool_response=deadpool_response.replace("w*nker","wanker")
-        deadpool_response=deadpool_response.replace("*ssy","ussy")
-        deadpool_response=deadpool_response.replace("*ss","ass")
-        deadpool_response=deadpool_response.replace("d*mn","damn")
-        deadpool_response=deadpool_response.replace("t*ts","tits")
-        deadpool_response=deadpool_response.replace("wh*re","whore")
-        deadpool_response=deadpool_response.replace("sl*t","slut")
-        deadpool_response=deadpool_response.replace("*ll","ell")
-        deadpool_response=deadpool_response.replace("t*t","tit")
-        deadpool_response=deadpool_response.replace("b*tt","butt")
-        deadpool_response=deadpool_response.replace("tw*t","twat")
-
-
+       
 
         print(f"Deadpool: {deadpool_response}")
 
